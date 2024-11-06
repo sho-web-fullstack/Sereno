@@ -417,36 +417,7 @@ button {
 
 /*=============== LOGOS ===============*/
 
-.partners__content
-{
-  display: grid;
-}
 
-.partners__content{
-  grid-template-columns: repeat(3,1fr);
-  gap: 2.5rem 4rem;
-  margin: 0;
-  text-align: center;
-}
-
-.logos__container
-{
-  padding-top: 2rem;
-  grid-template-columns: repeat(3, 4fr);
-  gap: 3rem 2rem;
-  justify-items: center;
-  
-}
-
-.logos__img img{
-  height: 60px;
-  opacity: .2;
-  transition: .3s;
-}
-.logos__img img:hover
-{
-  opacity: .6;
-}
 /*=============== POPULAR ===============*/
 .popular__container
 {
@@ -750,37 +721,12 @@ button {
 }
 
 /*=============== Content ===============*/
-.rowContent
-{
-  width: 80%;
-  max-width: 1170px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 50px;
-  overflow: hidden;
-  padding: 5rem;
-}
-.rowContent .imgWrapper
-{
-  overflow: hidden;
-}
-
 .rowContent .imgWrapper img{
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: 0.3s;
   border-radius: 30px;
-}
-
-.rowContent .imgWrapper:hover img{
-  transform: scale(1.25);
-}
-
-
-.contentWrapper
-{
-   margin-top: 25%;
 }
 
 /*=============== CONTACT ===============*/
@@ -1188,6 +1134,8 @@ color: var(--title-color);
     justify-content: center;
   }
 
+  
+
   @media screen and (min-width:767px) {
     .home__container
     {
@@ -1238,6 +1186,68 @@ color: var(--title-color);
       grid-template-columns: repeat(2, max-content);
       /* justify-content: space-between; */
     }
+    .partners__content
+{
+  display: grid;
+}
+
+.partners__content{
+  grid-template-columns: repeat(3,1fr);
+  gap: 2.5rem 4rem;
+  margin: 0;
+  text-align: center;
+}
+
+.logos__container
+{
+  padding-top: 2rem;
+  grid-template-columns: repeat(3, 4fr);
+  gap: 3rem 2rem;
+  justify-items: center;
+  
+}
+
+.logos__img img{
+  height: 60px;
+  opacity: .2;
+  transition: .3s;
+}
+.logos__img img:hover
+{
+  opacity: .6;
+}
+.rowContent
+{
+  width: 80%;
+  max-width: 1170px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  overflow: hidden;
+  padding: 5rem;
+}
+.rowContent .imgWrapper
+{
+  overflow: hidden;
+}
+
+.rowContent .imgWrapper img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+  border-radius: 30px;
+}
+
+.rowContent .imgWrapper:hover img{
+  transform: scale(1.25);
+}
+
+
+.contentWrapper
+{
+   margin-top: 25%;
+}
   }
 
 
